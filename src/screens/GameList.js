@@ -6,6 +6,7 @@ import Game from "../components/Game";
 const GameList = () => {
 
     const [gameList, setGameList] = useState([]);
+    const [bestGames, setBestGames] = useState(false);
 
   useEffect(() => {
     axios
@@ -13,17 +14,28 @@ const GameList = () => {
       .then((res) => setGameList(res.data))
   }, []);
   
-  return (
-    <div className="GameList">
-      <h1> Game Liste</h1>
-        <div>
-        {gameList.map((game) => {
-				return (
-          <Game game={game} />
+  const selectBestGames = () => {
+    setBestGames((prevState) => ! prevState);
+  };
 
-					
+  return (
+    <div className="mainDivGameList">
+      <h2>Games Liste</h2>
+
+      <div>
+        <button onClick={selectBestGames}>Best games</button>
+      </div>
+
+        <div className='divGameList'> 
+                
+        {gameList
+        .filter(game => bestGames ? game.rating >= 4.5 : true)
+        .map((game) => {
+				return (
+          <Game gameX={game} />
 				)
 			})}
+  
         </div>
     </div>
   );

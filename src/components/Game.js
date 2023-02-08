@@ -1,13 +1,17 @@
 import '../styles/Game.css'
 
 
-const Game = ({game}) => {
+const Game = ({gameX}) => {
+///// le props Game vient de la déclaration faite /////
+///// dans l'appel du composant Game dans le composant GameList /////
 
   return (
-    <div>
-      <h4>{game.name}</h4>
-      <img className='imgGame' src={game.background_image} alt={game.name} />
-      <p className='pGame'>Rating : {game.rating}</p>
+    <div className='divGameCard'>
+
+      <h4 className='titleGameCard'>{gameX.name}</h4>
+      <img className='imgGame' src={gameX.background_image} alt={gameX.name} />
+      <p className='pGame'>Rating : {gameX.rating}</p>
+
     </div>
   );
 }

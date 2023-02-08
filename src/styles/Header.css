@@ -1,4 +1,7 @@
 .Header {
     background-color: rgb(171, 218, 202);
     padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(65, 65, 128);
 }
