@@ -3,15 +3,22 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 2px solid rgb(65, 65, 128);
+    /* border: 2px solid rgb(65, 65, 128); */
     border-radius: 10px;
     height: 250px;
     width: 300px;
-    margin: 10px;
+    margin: 15px;
+    background-color: rgb(177, 177, 204);
+    transition: transform 0.3s;
+}
+.divGameCard:hover {
+    transform: scale(1.04);
+    background-color: rgb(250, 241, 161);
 }
 .titleGameCard {
     color: rgb(65, 65, 128);
     font-size: 1.1em;
+    margin: 10px;
 }
 .imgGame {
     height: 100px;
@@ -20,4 +27,17 @@
 }
 .pGame {
     font-size: 14px;
+    margin: 5px 0px 15px 0px;
+}
+.buttonGameDetails {
+    background-color: rgb(65, 65, 128);
+    color: rgb(177, 177, 204);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+.buttonGameDetails:hover {
+    color: rgb(250, 241, 161);
+    font-weight: bold;
 }

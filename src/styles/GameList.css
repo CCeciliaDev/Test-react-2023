@@ -1,8 +1,13 @@
 .mainDivGameList {
+    background-color: rgb(49, 49, 49);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: unset;
+}
+.titleScreenGameList {
+    color: rgb(177, 177, 204);
 
 }
 .divGameList {
@@ -12,4 +17,16 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+}
+.buttonBestGames {
+    background-color: rgb(195, 147, 225);
+    font-weight: bold;
+    color: rgb(65, 65, 128);
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+.buttonBestGames:hover {
+    transform: scale(1.1);
 }

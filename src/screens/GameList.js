@@ -14,25 +14,35 @@ const GameList = () => {
       .then((res) => setGameList(res.data))
   }, []);
   
+  // const selectBestGames = () => {
+  //   setBestGames((prevState) => ! prevState);
+  // };
+
   const selectBestGames = () => {
-    setBestGames((prevState) => ! prevState);
+    setBestGames(! bestGames);
   };
+
 
   return (
     <div className="mainDivGameList">
-      <h2>Games Liste</h2>
+      <h2 className='titleScreenGameList'>Games Liste</h2>
 
       <div>
-        <button onClick={selectBestGames}>Best games</button>
+        <button className='buttonBestGames' onClick={selectBestGames}>Best games</button>
       </div>
 
         <div className='divGameList'> 
-                
+
         {gameList
         .filter(game => bestGames ? game.rating >= 4.5 : true)
         .map((game) => {
 				return (
-          <Game gameX={game} />
+          <Game 
+          key={game.id}
+          name={game.name}
+          image={game.background_image}
+          rating={game.rating}
+          id={game.id} />
 				)
 			})}
   

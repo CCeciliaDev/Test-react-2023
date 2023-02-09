@@ -1,0 +1,28 @@
+.GameDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divGameDetails  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(65, 65, 128);
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+.titleGameDetails {
+    color: rgb(65, 65, 128);
+    font-size: 1.2em;
+}
+.imgGameDetails {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+}
+.pGameDetails {
+    font-size: 16px;
+}
