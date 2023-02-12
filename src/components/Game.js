@@ -4,7 +4,7 @@ import '../styles/Game.css'
 
 const Game = ({name, image, rating, id}) => {
 
-  const gameLink = `/games/${id}`
+  const gameLink = `/allgames/${id}`
 
   return (
     <div className='divGameCard'>

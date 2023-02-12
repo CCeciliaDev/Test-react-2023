@@ -10,7 +10,7 @@ const GameList = () => {
 
   useEffect(() => {
     axios
-      .get("https://apis.wilders.dev/wild-games/games")
+      .get("http://localhost:4242/allgames")
       .then((res) => setGameList(res.data))
   }, []);
   
@@ -40,7 +40,7 @@ const GameList = () => {
           <Game 
           key={game.id}
           name={game.name}
-          image={game.background_image}
+          image={game.image}
           rating={game.rating}
           id={game.id} />
 				)

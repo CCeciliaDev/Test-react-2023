@@ -1,28 +1,40 @@
 .GameDetails {
+    background-color: rgb(49, 49, 49);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 .divGameDetails  {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 2px solid rgb(65, 65, 128);
+    /* border: 2px solid rgb(65, 65, 128); */
     border-radius: 10px;
-    height: 300px;
-    width: 300px;
-    margin: 10px;
+
+    width: 400px;
+    margin: 0px 10px 10px 10px;
+}
+.titlePageGameDetails {
+    color: rgb(65, 65, 128);
 }
 .titleGameDetails {
-    color: rgb(65, 65, 128);
-    font-size: 1.2em;
+    color: rgb(177, 177, 204);
+    font-size: 1.8em;
+    margin: 25px 0px 15px 0px;
 }
 .imgGameDetails {
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 350px;
     object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 5px solid rgb(250, 241, 161);
 }
 .pGameDetails {
+    color: rgb(177, 177, 204);
+    font-weight: bold;
     font-size: 16px;
+    margin: 0px 0px 10px 0px;
 }

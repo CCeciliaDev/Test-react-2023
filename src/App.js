@@ -12,7 +12,7 @@ function App() {
       <Header name="All Games"/>
       <Routes>
         <Route path="/" element={<GameList />} />
-        <Route path="/games/:id" element={<GameDetails />} />
+        <Route path="/allgames/:id" element={<GameDetails />} />
       </Routes>
     </div>
     </>
